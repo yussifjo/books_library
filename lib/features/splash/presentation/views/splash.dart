@@ -1,3 +1,5 @@
+import 'package:books_library/core/utils/app_assets.dart';
+
 import 'package:flutter/material.dart';
 
 class SplashView extends StatelessWidget {
@@ -5,6 +7,10 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: SizedBox(
+        child: Image.asset(Assets.onBorading2),
+      ),
+    );
   }
 }
